@@ -132,3 +132,42 @@ footer {
 .resume-button:hover {
   background-color: #3399dd;
 }
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100%;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-right: 1px solid #333;
+  overflow-y: auto;
+}
+
+.sidebar-inner {
+  position: sticky;
+  top: 20px;
+  color: #ddd;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.2em;
+  color: #fff;
+}
+
+.sidebar a {
+  color: #4db8ff;
+  word-break: break-word;
+}
+
+.sidebar hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 10px 0;
+}
+
+/* Сдвигаем остальной контент */
+body {
+  margin-left: 240px;
+}

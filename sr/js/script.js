@@ -1,15 +1,23 @@
-const tabs = document.querySelectorAll('.nav-tabs a');
-const sections = document.querySelectorAll('.tab');
-
-tabs.forEach(tab => {
-  tab.addEventListener('click', e => {
-    e.preventDefault();
-
-    tabs.forEach(t => t.classList.remove('active'));
-    sections.forEach(s => s.classList.remove('active-tab'));
-
-    tab.classList.add('active');
-    const target = document.getElementById(tab.dataset.tab);
-    if (target) target.classList.add('active-tab');
+// Добавим плавное раскрытие details с анимацией (плавное открытие/закрытие)
+document.querySelectorAll('details').forEach((detail) => {
+  detail.addEventListener('toggle', (e) => {
+    if (detail.open) {
+      // анимация открытия — например, плавное появление содержимого
+      const summary = detail.querySelector('summary');
+      const content = Array.from(detail.childNodes).filter(n => n.nodeType === 1 && n.tagName !== 'SUMMARY');
+      content.forEach(el => {
+        el.style.maxHeight = el.scrollHeight + 'px';
+        el.style.transition = 'max-height 0.5s ease';
+        el.style.overflow = 'hidden';
+      });
+    } else {
+      // анимация закрытия
+      const content = Array.from(detail.childNodes).filter(n => n.nodeType === 1 && n.tagName !== 'SUMMARY');
+      content.forEach(el => {
+        el.style.maxHeight = '0';
+        el.style.transition = 'max-height 0.5s ease';
+        el.style.overflow = 'hidden';
+      });
+    }
   });
 });

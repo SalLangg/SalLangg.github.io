@@ -2,109 +2,127 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Медведев Давид | Data Science</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Резюме Медведев Давид Валерьевич</title>
   <link rel="stylesheet" href="sr/css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
 </head>
 <body>
-  <header>
-    <h1>Медведев Давид</h1>
-    <p class="tagline">Стажер Data Science | ML | FastAPI, PyTorch, Docker</p>
-    <nav>
-      <ul class="nav-tabs">
-        <li><a data-tab="about" class="active">Обо мне</a></li>
-        <li><a data-tab="resume">Резюме</a></li>
-        <li><a data-tab="projects">Проекты</a></li>
-      </ul>
-    </nav>
-  </header>
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-      <h2>Медведев Давид</h2>
-      <p>Data Science Intern</p>
-      <hr />
-      <p><strong>Telegram:</strong><br>
-        <a href="https://t.me/david_medvedev">@david_medvedev</a>
+  <main class="resume-container">
+    <header>
+      <h1>Медведев Давид Валерьевич</h1>
+      <p class="subtitle">Стажер Data Science</p>
+      <p class="description">
+        Увлечен технологиями машинного обучения и методами их применения для решения бизнес-задач или облегчения жизни работникам бизнеса.
+        Стремлюсь к системному подходу: комплексно анализирую проблему и пытаюсь найти несколько путей решения. Регулярно разрабатываю обучающие материалы — инструкции, видео уроки и провожу онлайн занятия для своих коллег. Активно участвую в адаптации новых сотрудников, выступаю для них ментором.
+        В командной работе я стремлюсь к тому, чтобы команда постоянно развивалась и могла пробовать новые подходы и идеи. В личной работе стремлюсь к построению устойчивых и полезных решений в долгосрочной перспективе.
       </p>
-      <p><strong>GitHub:</strong><br>
-        <a href="https://github.com/MedvedevDV">MedvedevDV</a>
-      </p>
-    </div>
-  </aside>
-  <main>
-    <!-- ОБО МНЕ -->
-    <section id="about" class="tab active-tab">
-      <h2>Обо мне</h2>
-      <p>Увлечен технологиями машинного обучения и методами их применения для решения бизнес-задач или облегчения жизни работникам бизнеса. Стремлюсь к системному подходу: анализирую проблему и ищу несколько путей решения.</p>
-      <p>Разрабатываю обучающие материалы — инструкции, видеоуроки, провожу онлайн-занятия для коллег. Менторю новых сотрудников и участвую в их адаптации.</p>
-      <p>В командной работе ценю развитие и гибкость. В личной — долгосрочную пользу и устойчивые решения.</p>
+    </header>
 
-      <h3>Контакты</h3>
+    <section class="contacts">
+      <h2>Контакты</h2>
       <ul>
         <li>Telegram: <a href="https://t.me/david_medvedev" target="_blank">@david_medvedev</a></li>
         <li>GitHub: <a href="https://github.com/MedvedevDV" target="_blank">github.com/MedvedevDV</a></li>
       </ul>
     </section>
 
-    <!-- РЕЗЮМЕ -->
-    <section id="resume" class="tab">
-      <h3>Образование</h3>
-      <ul>
-        <li><strong>2024 – н.в.:</strong> Магистратура, МФТИ, Современная комбинаторика</li>
-        <li><strong>2018 – 2022:</strong> Тюменский индустриальный университет, Расчёты строительных конструкций</li>
-      </ul>
-
-      <h3>Курсы</h3>
-      <ul>
-        <li>Центр "Пуск" МФТИ — Продвинутые методы ML</li>
-        <li>ML (Константин Воронцов), Python (Мурат Апишев)</li>
-      </ul>
-
-      <h3>Профессиональный опыт</h3>
-      <p><strong>С 02/2023:</strong> BIM-Менеджер, ООО «Партнер.Проект»</p>
-      <ul>
-        <li>Внедрение и поддержка ИТ в проектной организации</li>
-        <li>Согласование решений с руководством и отделами</li>
-        <li>Обучение сотрудников, техподдержка</li>
-        <li>Разработка автоматизаций и базы знаний</li>
-      </ul>
-
-      <h3>Навыки</h3>
-      <p><strong>Языки:</strong> Python, C# (базово)</p>
-      <p><strong>ML:</strong> PyTorch, scikit-learn</p>
-      <p><strong>Инструменты:</strong> SQL, Docker, FastAPI, MLflow</p>
-    </section>
-
-    <!-- ПРОЕКТЫ -->
-    <section id="projects" class="tab">
-      <div class="project">
-        <h3>MorseNet — декодер Морзе</h3>
-        <p><strong>Tech:</strong> PyTorch, FastAPI, MLflow, Docker</p>
-        <p>Нейросеть CNN → LSTM с CTC Loss, Mel-спектрограммы, аугментации. Log через MLflow, инференс и обучение через FastAPI. 15 место на Kaggle (Levenshtein dist: 0.433).</p>
-        <a href="https://github.com/MedvedevDV/Morse-Decoder_V2" target="_blank">GitHub</a>
+    <section class="education">
+      <h2>Образование</h2>
+      <div class="edu-item">
+        <h3>2024 — по настоящее время</h3>
+        <p><b>МФТИ, ФПМИ — Магистратура</b></p>
+        <p>Факультет: Прикладная математика и информатика</p>
+        <p>Направление: Современная комбинаторика</p>
       </div>
-
-      <div class="project">
-        <h3>Классификация изображений</h3>
-        <p><strong>Tech:</strong> PyTorch, torchvision, seaborn</p>
-        <p>CNN-модель с 3 сверточными блоками. Аугментации: вращение, яркость, отражение. Accuracy: 91.56% на тренировке.</p>
-      </div>
-
-      <div class="project">
-        <h3>RAG-LMM помощник инженера (в разработке)</h3>
-        <p><strong>Tech:</strong> OCR, CV, LLM, RAG</p>
-        <p>Интеллектуальный поиск по нормативной документации и заметкам. Решает проблемы неструктурированности, проверки актуальности, галлюцинаций LLM.</p>
+      <div class="edu-item">
+        <h3>2018 — 2022</h3>
+        <p><b>Тюменский индустриальный университет — Бакалавриат</b></p>
+        <p>Направление: Расчеты строительных конструкций</p>
       </div>
     </section>
+
+    <section class="courses">
+      <h2>Обучение и курсы</h2>
+      <ul>
+        <li>Центр "Пуск" МФТИ: Продвинутые методы машинного обучения.</li>
+        <li>Кафедра интеллектуальных систем: Введение в машинное обучение (Константин Воронцов) и программирование на Python (Мурат Апишев)</li>
+      </ul>
+    </section>
+
+    <section class="projects">
+      <h2>Проекты</h2>
+
+      <details>
+        <summary><b>MorseNet — Декодер аудио файлов с кодом Морзе</b></summary>
+        <p>Цель: построить модель декодирования сигналов морзе, используя технологии, похожие на обработку естественного языка.</p>
+        <p>Технологии: PyTorch, FastAPI, MLflow, Docker</p>
+        <ul>
+          <li>Построена нейросеть CNN → LSTM с CTC Loss для декодирования из аудиофайлов</li>
+          <li>Использованы Mel-спектрограммы и аугментации (time/freq masking)</li>
+          <li>Логирование метрик обучения через MLflow</li>
+          <li>Сохранение моделей на сервере</li>
+          <li>Качество: 0.433 по Levenshtein distance на Kaggle (15 место, лидер — 0.24)</li>
+          <li>FastAPI-сервер с возможностью дообучения модели независимо от инференса</li>
+          <li>Решение упаковано в Docker</li>
+          <li>GitHub: <a href="https://github.com/MedvedevDV/Morse-Decoder_V2" target="_blank">github.com/MedvedevDV/Morse-Decoder_V2</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary><b>Классификация изображений (учебный проект)</b></summary>
+        <p>Цель: построить модель для классификации 42 персонажей по JPEG-изображениям</p>
+        <p>Технологии: PyTorch, torchvision, seaborn</p>
+        <ul>
+          <li>Разработана CNN-модель с 3 сверточными блоками</li>
+          <li>Техники аугментации и расширения тестовой выборки: повороты, изменение яркости, горизонтальное отражение</li>
+          <li>91.56% accuracy на тренировочной выборке для базовой модели</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary><b>RAG-LMM помощник инженера (В разработке)</b></summary>
+        <p>Цель: разработать систему умного поиска по внутренней базе знаний компании с выводом найденной информации в качестве контекста LLM.</p>
+        <p>Технологии: модели компьютерного зрения, ORC, LLM, RAG</p>
+        <ul>
+          <li>Решение проблем с неструктурированной документацией с помощью ORC</li>
+          <li>Интеграция примечаний с изображениями в систему</li>
+          <li>Проверка актуальности норм</li>
+          <li>Фильтрация галлюцинаций LLM</li>
+        </ul>
+      </details>
+    </section>
+
+    <section class="experience">
+      <h2>Профессиональный опыт</h2>
+      <div class="job-item">
+        <h3>02/2023 — по настоящее время</h3>
+        <p><b>BIM-Менеджер | ООО «Партнер.Проект»</b></p>
+        <p><b>Основные зоны ответственности:</b></p>
+        <ul>
+          <li>Внедрение и поддержание IT в проектной организации</li>
+          <li>Согласование проектных решений с руководством</li>
+          <li>Увязка работы смежных отделов (40 человек)</li>
+          <li>Обучение сотрудников и техническая поддержка по информационному моделированию</li>
+          <li>Разработка систем автоматизации проектирования</li>
+        </ul>
+        <p><b>Достижения:</b></p>
+        <ul>
+          <li>Построены корпоративная база знаний и система автоматизации, достигшие KPI в течение 2 лет</li>
+          <li>Создана система поддержки и адаптации сотрудников</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>Навыки</h2>
+      <ul>
+        <li>Языки программирования: Python, C# (базово)</li>
+        <li>ML: PyTorch, sklearn</li>
+        <li>Прочее: SQL, Docker, FastAPI, MLflow</li>
+      </ul>
+    </section>
+
   </main>
-
-  <footer>
-    <p>&copy; 2025 Медведев Давид Валерьевич</p>
-  </footer>
 
   <script src="sr/js/script.js"></script>
 </body>

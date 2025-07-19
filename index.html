@@ -3,105 +3,132 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Резюме Медведев Давид Валерьевич</title>
+  <title>David Medvedev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="sr/css/styles.css" />
 </head>
 <body>
   <main class="resume-container">
     <!-- Левая колонка с именем, должностью, контактами -->
     <aside class="sidebar">
-      <h1 class="name">Медведев Давид Валерьевич</h1>
-      <p class="subtitle">Стажер Data Science</p>
+      <div class="sidebar-box">
+        <h1 class="name">Давид Медведев</h1>
+        <div class="subtitle-container">
+          <p class="subtitle">Стажер Data Science</p>
+          <p class="subtitle">Стажер ML Engineer</p>
+        </div>
 
-      <section class="contacts">
-        <h2>Контакты</h2>
-        <ul>
-          <li>Telegram: <a href="https://t.me/david_medvedev" target="_blank" rel="noopener noreferrer">@david_medvedev</a></li>
-          <li>GitHub: <a href="https://github.com/MedvedevDV" target="_blank" rel="noopener noreferrer">github.com/MedvedevDV</a></li>
-        </ul>
-      </section>
+        <section class="contacts">
+          <hr>
+          <ul>
+            <li>
+              Telegram:<br>
+              <a href="https://t.me/david_medvedev" target="_blank">@david_medvedev</a>
+            </li>
+            <li>
+              GitHub:<br>
+              <a href="https://github.com/MedvedevDV" target="_blank">github.com/MedvedevDV</a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </aside>
 
     <!-- Правая колонка с кнопками и контентом -->
     <section class="content">
       <nav class="tabs">
         <button class="tab-button active" data-tab="about">Обо мне</button>
-        <button class="tab-button" data-tab="education">Образование</button>
         <button class="tab-button" data-tab="projects">Проекты</button>
-        <button class="tab-button" data-tab="courses">Обучение и курсы</button>
+        <button class="tab-button" data-tab="courses">Доп. обучение</button>
       </nav>
 
       <div class="tab-content active" id="about">
         <p class="description">
-          Увлечен технологиями машинного обучения и методами их применения для решения бизнес-задач или облегчения жизни работникам бизнеса.
-          Стремлюсь к системному подходу: комплексно анализирую проблему и пытаюсь найти несколько путей решения. Регулярно разрабатываю обучающие материалы — инструкции, видео уроки и провожу онлайн занятия для своих коллег. Активно участвую в адаптации новых сотрудников, выступаю для них ментором.
-          В командной работе я стремлюсь к тому, чтобы команда постоянно развивалась и могла пробовать новые подходы и идеи. В личной работе стремлюсь к построению устойчивых и полезных решений в долгосрочной перспективе.
+          После инженерного проекта по автоматическому расчёту инсоляции помещений(степень освещенности помещений солнечным светом), основанного на методах линейной алгебры, я всерьёз увлекся математикой, что в конечном итоге привело меня в МФТИ и к сфере анализа данных и машинного обучения. Хочу развиваться Data Science и ML-инжиниринга, сосредотачиваясь на прикладных задачах. Также рассматриваю возможность поступления в аспирантуру и участия в исследовательских проектах.
         </p>
-      </div>
-
-      <div class="tab-content" id="education">
-        <h2>Образование</h2>
-        <div class="edu-item">
-          <h3>2024 — по настоящее время</h3>
-          <p><b>МФТИ, ФПМИ — Магистратура</b></p>
-          <p>Факультет: Прикладная математика и информатика</p>
-          <p>Направление: Современная комбинаторика</p>
+        <h2 style="margin-top: 20px;">Образование</h2>
+          <div class="edu-item">
+            <h3>2024 — по настоящее время</h3>
+            <p><b>МФТИ, ФПМИ — Магистратура</b></p>
+            <p>Факультет: Прикладная математика и информатика</p>
+            <p>Направление: Современная комбинаторика</p>
+          </div>
+          <div class="edu-item">
+            <h3>2018 — 2022</h3>
+            <p><b>Тюменский индустриальный университет — Бакалавриат</b></p>
+            <p>Направление: Строительство (Расчеты строительных конструкций)</p>
+          </div>
+          <h2 style="margin-top: 20px;">Профессиональный опыт</h2>
+          <div class="job-item">
+            <h3>BIM-Менеджер | ООО «Партнер.Проект»</h3>
+            <p><b>02/2023 — по настоящее время</b></p>
+            <ul>
+              <li>Внедрение и сопровождение информационных технологий в проектной организации</li>
+              <li>Разработка систем автоматизации проектирования для поддержки и ускорения рабочих процессов</li>
+              <li>Координация работы всех смежных отделов (около 40 человек)</li>
+              <li>Обучение сотрудников, создание обучающих материалов и техническая поддержка</li>
+            </ul>
+          </div>
         </div>
-        <div class="edu-item">
-          <h3>2018 — 2022</h3>
-          <p><b>Тюменский индустриальный университет — Бакалавриат</b></p>
-          <p>Направление: Расчеты строительных конструкций</p>
-        </div>
-      </div>
+        <div class="tab-content" id="projects">
+          <div class="project-item">
+            <h3>MorseNet — Декодер аудио файлов с кодом Морзе</h3>
+            <div class="project-content">
+              <p class="project-goal">Цель: построить модель декодирования сигналов морзе, используя технологии, похожие на обработку естественного языка.</p>
+              <p class="project-tech">Технологии: PyTorch, FastAPI, MLflow, Docker</p>
+              <ul class="project-details">
+                <li>Построена нейросеть CNN → LSTM с CTC Loss для декодирования из аудиофайлов</li>
+                <li>Использованы Mel-спектрограммы и аугментации (time/freq masking)</li>
+                <li>Логирование метрик обучения через MLflow</li>
+                <li>Сохранение моделей на сервере</li>
+                <li>Качество: 0.433 по Levenshtein distance на Kaggle (15 место, лидер — 0.24)</li>
+                <li>FastAPI-сервер с возможностью дообучения модели независимо от инференса</li>
+                <li>Решение упаковано в Docker</li>
+              </ul>
+              <p class="project-link">GitHub: <a href="https://github.com/MedvedevDV/Morse-Decoder_V2" target="_blank" rel="noopener noreferrer">github.com/MedvedevDV/Morse-Decoder_V2</a></p>
+            </div>
+          </div>
 
-      <div class="tab-content" id="projects">
-        <h2>Проекты</h2>
 
-        <details>
-          <summary><b>MorseNet — Декодер аудио файлов с кодом Морзе</b></summary>
-          <p>Цель: построить модель декодирования сигналов морзе, используя технологии, похожие на обработку естественного языка.</p>
-          <p>Технологии: PyTorch, FastAPI, MLflow, Docker</p>
-          <ul>
-            <li>Построена нейросеть CNN → LSTM с CTC Loss для декодирования из аудиофайлов</li>
-            <li>Использованы Mel-спектрограммы и аугментации (time/freq masking)</li>
-            <li>Логирование метрик обучения через MLflow</li>
-            <li>Сохранение моделей на сервере</li>
-            <li>Качество: 0.433 по Levenshtein distance на Kaggle (15 место, лидер — 0.24)</li>
-            <li>FastAPI-сервер с возможностью дообучения модели независимо от инференса</li>
-            <li>Решение упаковано в Docker</li>
-            <li>GitHub: <a href="https://github.com/MedvedevDV/Morse-Decoder_V2" target="_blank" rel="noopener noreferrer">github.com/MedvedevDV/Morse-Decoder_V2</a></li>
-          </ul>
-        </details>
+            <!-- Проект 1 - Классификация изображений -->
+            <div class="project-item">
+              <h3 class="project-title">Классификация изображений (учебный проект)</h3>
+              <div class="project-content">
+                <p class="project-goal">Цель: построить модель для классификации 42 персонажей по JPEG-изображениям</p>
+                <p class="project-tech">Технологии: PyTorch, torchvision, seaborn</p>
+                <ul class="project-details">
+                  <li class="project-detail-item">Разработана CNN-модель с 3 сверточными блоками</li>
+                  <li class="project-detail-item">Техники аугментации и расширения тестовой выборки: повороты, изменение яркости, горизонтальное отражение</li>
+                  <li class="project-detail-item">96.56% accuracy на тренировочной выборке для базовой модели</li>
+                </ul>
+              </div>
+            </div>
 
-        <details>
-          <summary><b>Классификация изображений (учебный проект)</b></summary>
-          <p>Цель: построить модель для классификации 42 персонажей по JPEG-изображениям</p>
-          <p>Технологии: PyTorch, torchvision, seaborn</p>
-          <ul>
-            <li>Разработана CNN-модель с 3 сверточными блоками</li>
-            <li>Техники аугментации и расширения тестовой выборки: повороты, изменение яркости, горизонтальное отражение</li>
-            <li>91.56% accuracy на тренировочной выборке для базовой модели</li>
-          </ul>
-        </details>
+            <!-- Проект 2 - RAG-LMM помощник -->
+            <div class="project-item">
+              <h3 class="project-title">RAG-LMM помощник инженера (в разработке)</h3>
+              <div class="project-content">
+                <p class="project-goal">Цель: разработать систему умного поиска по внутренней базе знаний компании с выводом найденной информации в качестве контекста LLM.</p>
+                <p class="project-tech">Технологии: модели компьютерного зрения, ORC, LLM, RAG</p>
+                <ul class="project-details">
+                  <li class="project-detail-item">Решение проблем с неструктурированной документацией с помощью ORC</li>
+                  <li class="project-detail-item">Интеграция примечаний с изображениями в систему</li>
+                  <li class="project-detail-item">Проверка актуальности норм</li>
+                  <li class="project-detail-item">Фильтрация галлюцинаций LLM</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-        <details>
-          <summary><b>RAG-LMM помощник инженера (В разработке)</b></summary>
-          <p>Цель: разработать систему умного поиска по внутренней базе знаний компании с выводом найденной информации в качестве контекста LLM.</p>
-          <p>Технологии: модели компьютерного зрения, ORC, LLM, RAG</p>
-          <ul>
-            <li>Решение проблем с неструктурированной документацией с помощью ORC</li>
-            <li>Интеграция примечаний с изображениями в систему</li>
-            <li>Проверка актуальности норм</li>
-            <li>Фильтрация галлюцинаций LLM</li>
-          </ul>
-        </details>
-      </div>
 
       <div class="tab-content" id="courses">
-        <h2>Обучение и курсы</h2>
         <ul>
-          <li>Центр "Пуск" МФТИ: Продвинутые методы машинного обучения.</li>
-          <li>Кафедра интеллектуальных систем: Введение в машинное обучение (Константин Воронцов) и программирование на Python (Мурат Апишев)</li>
+          <li><p><h4>Центр "Пуск" МФТИ:</h4></p> Продвинутые методы машинного обучения.</li>
+          <li><p><h4>Кафедра интеллектуальных систем:</h4></p> 
+            <p>Введение в машинное обучение (Константин Воронцов)</p>
+            <p>Программирование на Python (Мурат Апишев)</p></li>
         </ul>
       </div>
     </section>

@@ -1,23 +1,18 @@
-// Добавим плавное раскрытие details с анимацией (плавное открытие/закрытие)
-document.querySelectorAll('details').forEach((detail) => {
-  detail.addEventListener('toggle', (e) => {
-    if (detail.open) {
-      // анимация открытия — например, плавное появление содержимого
-      const summary = detail.querySelector('summary');
-      const content = Array.from(detail.childNodes).filter(n => n.nodeType === 1 && n.tagName !== 'SUMMARY');
-      content.forEach(el => {
-        el.style.maxHeight = el.scrollHeight + 'px';
-        el.style.transition = 'max-height 0.5s ease';
-        el.style.overflow = 'hidden';
-      });
-    } else {
-      // анимация закрытия
-      const content = Array.from(detail.childNodes).filter(n => n.nodeType === 1 && n.tagName !== 'SUMMARY');
-      content.forEach(el => {
-        el.style.maxHeight = '0';
-        el.style.transition = 'max-height 0.5s ease';
-        el.style.overflow = 'hidden';
-      });
-    }
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.tab-button');
+  const tabs = document.querySelectorAll('.tab-content');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const target = button.dataset.tab;
+
+      // Снять активность со всех кнопок и табов
+      buttons.forEach(btn => btn.classList.remove('active'));
+      tabs.forEach(tab => tab.classList.remove('active'));
+
+      // Активировать нажатую кнопку и соответствующий таб
+      button.classList.add('active');
+      document.getElementById(target).classList.add('active');
+    });
   });
 });
